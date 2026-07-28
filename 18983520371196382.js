@@ -9,8 +9,8 @@ $(document).ready(function() {
 		$( "#salesPriceSlider" ).slider({
 			animate: "slow",
 			min: 400000,
-			max: 3000000,
-			value:1500000,
+			max: 1500000,
+			value:600000,
 			step: 10000,
 			   
 			slide: function( event, ui ) {
