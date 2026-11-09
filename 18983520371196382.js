@@ -2,8 +2,8 @@
 $(document).ready(function() {
 	  
 		var salesPrice_number = 600000;
-		var agentCommissionAmount_number = salesPrice_number * 0.06;
-		var flatFee_number = 3477;
+		var agentCommissionAmount_number = salesPrice_number * 0.03;
+		var flatFee_number = 3777;
 		var savings_number = agentCommissionAmount_number - flatFee_number;
 
 		$( "#salesPriceSlider" ).slider({
@@ -15,7 +15,7 @@ $(document).ready(function() {
 			   
 			slide: function( event, ui ) {
 				salesPrice_number = ui.value;
-				agentCommissionAmount_number = salesPrice_number * 0.06;
+				agentCommissionAmount_number = salesPrice_number * 0.03;
 				savings_number = agentCommissionAmount_number - flatFee_number;
 
 				$( "#salesPrice" ).text( formatCurrency(salesPrice_number) );
